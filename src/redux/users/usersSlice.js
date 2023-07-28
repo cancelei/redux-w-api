@@ -1,11 +1,14 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 
 // Async action to fetch users
-export const fetchUsers = createAsyncThunk('users/fetchUsers', async () => {
-  const response = await fetch('https://reqres.in/api/users');
-  const data = await response.json();
-  return data.data;
-});
+export const fetchUsers = createAsyncThunk(
+  'users/fetchUsers',
+  async () => {
+    const response = await fetch('https://randomuser.me/api/?results=5');
+    const data = await response.json();
+    return data.results;
+  }
+);
 
 const usersSlice = createSlice({
   name: "users",

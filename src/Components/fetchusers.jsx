@@ -16,8 +16,8 @@ const FetchUsers = () => {
   return (
     <ul>
       {users.map((user) => (
-        <li key={user.id}>
-          {user.first_name} {user.last_name}
+        <li key={user.login.uuid}>
+          {user.name.first} {user.name.last}
         </li>
       ))}
     </ul>
