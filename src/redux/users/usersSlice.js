@@ -5,7 +5,7 @@ import { createSlice } from "@reduxjs/toolkit";
 const usersSlice = createSlice({
   name: "users",
   initialState: {
-    usersList: [],
+    users: [],
     },
   reducers: {
     // Reducers go here
