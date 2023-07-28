@@ -10,8 +10,9 @@ const usersSlice = createSlice({
   reducers: {
     // Reducers go here
   },
-  extraReducers: {},
+  extraReducers: (builder) => {
+    // Add extraReducers here using builder.addCase or builder.addMatcher
+  },
 });
 
-// Export the reducer function as the default export
 export default usersSlice.reducer;

@@ -1,6 +1,5 @@
 import React from "react";
 import { useSelector } from "react-redux";
-import PropTypes from "prop-types";
 
 const FetchUsers = () => {
   const { users, isLoading, error } = useSelector((state) => state.users);
@@ -17,12 +16,6 @@ const FetchUsers = () => {
       ))}
     </ul>
   );
-}
-
-FetchUsers.propTypes = {
-  users: PropTypes.array.isRequired,
-  isLoading: PropTypes.bool.isRequired,
-  error: PropTypes.string
 }
 
 export default FetchUsers;
