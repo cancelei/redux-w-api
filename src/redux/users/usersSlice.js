@@ -13,5 +13,5 @@ const usersSlice = createSlice({
   extraReducers: {},
 });
 
-export const usersReducer = usersSlice.reducer;
-export default usersSlice;
+// Export the reducer function as the default export
+export default usersSlice.reducer;
